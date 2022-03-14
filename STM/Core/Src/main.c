@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,7 +106,7 @@ int16_t Gyro_Z_RAW = 0;
 float Ax, Ay, Az, Gx, Gy, Gz;
 
 uint32_t adc_value;
-char message[11];
+
 
 void MPU6050_Init (void)
 {
@@ -127,6 +127,9 @@ void MPU6050_Init (void)
 		// Set DATA RATE of 1KHz by writing SMPLRT_DIV register
 		// frecuencia en la que se envían los datos
 		Data = 0x07;
+		HAL_I2C_Mem_Write(&hi2c2, MPU6050_ADDR, 0x1A, 1, &Data, 1, 1000);
+
+		Data = 0x00;
 		HAL_I2C_Mem_Write(&hi2c2, MPU6050_ADDR, SMPLRT_DIV_REG, 1, &Data, 1, 1000);
 
 		// Set accelerometer configuration in ACCEL_CONFIG Register
@@ -144,6 +147,7 @@ void MPU6050_Init (void)
 
 void MPU6050_Read_Accel (void)
 {
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 1);
 	uint8_t Rec_Data[6];
 
 	// Read 6 BYTES of data starting from ACCEL_XOUT_H register
@@ -162,6 +166,7 @@ void MPU6050_Read_Accel (void)
 	Ax = Accel_X_RAW/16384.0;
 	Ay = Accel_Y_RAW/16384.0;
 	Az = Accel_Z_RAW/16384.0;
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 0);
 }
 
 void MPU6050_Read_Gyro (void)
@@ -184,6 +189,7 @@ void MPU6050_Read_Gyro (void)
 	Gx = Gyro_X_RAW/131.0;
 	Gy = Gyro_Y_RAW/131.0;
 	Gz = Gyro_Z_RAW/131.0;
+
 }
 
 /* USER CODE END 0 */
@@ -459,7 +465,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 72-1;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 500000;
+  htim2.Init.Period = 2500;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -609,22 +615,30 @@ static void MX_GPIO_Init(void)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
+	//SDA 		-> F0
+	//SCL 		-> F1
+	//ADC1 CH0 	-> A0
+
 	UNUSED(htim);
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
-	HAL_ADC_Start(&hadc1);
-	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-	adc_value = HAL_ADC_GetValue(&hadc1);
 
-	sprintf(message, "%hu\r\n",(int)adc_value);
-	HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+	//HAL_ADC_Start(&hadc1);
+	//HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+	//adc_value = HAL_ADC_GetValue(&hadc1);
+
+	//sprintf(message, "%hu\r\n",(int)adc_value);
+	//HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
 
 	MPU6050_Read_Accel();
-	MPU6050_Read_Gyro();
-
-	sprintf(message, "%1.2f,%1.2f,%1.2f\r\n",Ax,Ay,Az);
+	// MPU6050_Read_Gyro();
+	char message[11];
+	//sprintf(message, "%1.2f\n",Ax);
+	gcvt(Ay,4,message);
+	strcat(message,"\n");
+	//message=to_string(Ax);
 	HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
-
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
+
 }
 
 /* USER CODE END 4 */

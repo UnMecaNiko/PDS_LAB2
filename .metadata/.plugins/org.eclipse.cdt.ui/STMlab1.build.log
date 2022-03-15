@@ -1,0 +1,10 @@
+21:29:43 **** Incremental Build of configuration Debug for project STMlab1 ****
+make -j2 all 
+arm-none-eabi-size   STMlab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24040	    120	   2984	  27144	   6a08	STMlab1.elf
+Finished building: default.size.stdout
+ 
+
+21:29:46 Build Finished. 0 errors, 0 warnings. (took 2s.882ms)
+

@@ -82,7 +82,7 @@ class Ui_Dialog(object):
 # User functions BEGIN
 
 COM="COM19"
-nombreArchivo='acelymovladoalado01.txt'
+nombreArchivo='acelzmovladoalado06.txt'
 
 
 script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
@@ -96,14 +96,14 @@ def escribirArchivo(nombre,dato):
 
 
 def getValues(value):
-    print("empezar hilo")
+    # print("empezar hilo")
     while isRun:
         
         cad = stm.readline().decode('ascii').strip()
         if cad:
             value=cad
             ui.lcdNumber.setProperty("value", str(value))
-            print(value)
+            # print(value)
                 
             if ui.capturing:
                 escribirArchivo(nombreArchivo,str(value))

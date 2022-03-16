@@ -1283,9 +1283,9 @@ void MPU6050_Init (void)
  8000f5c:	f002 f98e 	bl	800327c <HAL_I2C_Mem_Write>
 
 		// Set accelerometer configuration in ACCEL_CONFIG Register
-		// XA_ST=0,YA_ST=0,ZA_ST=0, FS_SEL=0 -> ± 2g
-		Data = 0x00;
- 8000f60:	2300      	movs	r3, #0
+		// XA_ST=0,YA_ST=0,ZA_ST=0, FS_SEL=0 -> ± 2g FS_SEL=1 -> ± 4g
+		Data = 1ul<<3;
+ 8000f60:	2308      	movs	r3, #8
  8000f62:	71bb      	strb	r3, [r7, #6]
 		HAL_I2C_Mem_Write(&hi2c2, MPU6050_ADDR, ACCEL_CONFIG_REG, 1, &Data, 1, 1000);
  8000f64:	f44f 737a 	mov.w	r3, #1000	; 0x3e8
@@ -1390,7 +1390,7 @@ void MPU6050_Read_Accel (void)
 	     I have configured FS_SEL = 0. So I am dividing by 16384.0
 	     for more details check ACCEL_CONFIG Register              ****/
 
-	Ax = Accel_X_RAW/16384.0;
+	Ax = Accel_X_RAW/8192.0;
  8001008:	4b24      	ldr	r3, [pc, #144]	; (800109c <MPU6050_Read_Accel+0xf4>)
  800100a:	f9b3 3000 	ldrsh.w	r3, [r3]
  800100e:	4618      	mov	r0, r3
@@ -1406,7 +1406,7 @@ void MPU6050_Read_Accel (void)
  800102a:	4602      	mov	r2, r0
  800102c:	4b1f      	ldr	r3, [pc, #124]	; (80010ac <MPU6050_Read_Accel+0x104>)
  800102e:	601a      	str	r2, [r3, #0]
-	Ay = Accel_Y_RAW/16384.0;
+	Ay = Accel_Y_RAW/8192.0;
  8001030:	4b1b      	ldr	r3, [pc, #108]	; (80010a0 <MPU6050_Read_Accel+0xf8>)
  8001032:	f9b3 3000 	ldrsh.w	r3, [r3]
  8001036:	4618      	mov	r0, r3
@@ -1422,7 +1422,7 @@ void MPU6050_Read_Accel (void)
  8001052:	4602      	mov	r2, r0
  8001054:	4b16      	ldr	r3, [pc, #88]	; (80010b0 <MPU6050_Read_Accel+0x108>)
  8001056:	601a      	str	r2, [r3, #0]
-	Az = Accel_Z_RAW/16384.0;
+	Az = Accel_Z_RAW/8192.0;
  8001058:	4b12      	ldr	r3, [pc, #72]	; (80010a4 <MPU6050_Read_Accel+0xfc>)
  800105a:	f9b3 3000 	ldrsh.w	r3, [r3]
  800105e:	4618      	mov	r0, r3
@@ -1454,7 +1454,7 @@ void MPU6050_Read_Accel (void)
  800109c:	200001f8 	.word	0x200001f8
  80010a0:	200001fa 	.word	0x200001fa
  80010a4:	200001fc 	.word	0x200001fc
- 80010a8:	40d00000 	.word	0x40d00000
+ 80010a8:	40c00000 	.word	0x40c00000
  80010ac:	20000738 	.word	0x20000738
  80010b0:	200006e4 	.word	0x200006e4
  80010b4:	2000073c 	.word	0x2000073c
@@ -2486,7 +2486,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	// MPU6050_Read_Gyro();
 	char message[11];
 	//sprintf(message, "%1.2f\n",Ax);
-	gcvt(Ay,4,message);
+	gcvt(Az,4,message);
  800168e:	4b1b      	ldr	r3, [pc, #108]	; (80016fc <HAL_TIM_PeriodElapsedCallback+0x84>)
  8001690:	681b      	ldr	r3, [r3, #0]
  8001692:	4618      	mov	r0, r3
@@ -2534,7 +2534,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  80016f4:	46bd      	mov	sp, r7
  80016f6:	bdb0      	pop	{r4, r5, r7, pc}
  80016f8:	40020400 	.word	0x40020400
- 80016fc:	200006e4 	.word	0x200006e4
+ 80016fc:	2000073c 	.word	0x2000073c
  8001700:	08008810 	.word	0x08008810
  8001704:	20000210 	.word	0x20000210
 

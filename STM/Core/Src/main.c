@@ -133,8 +133,8 @@ void MPU6050_Init (void)
 		HAL_I2C_Mem_Write(&hi2c2, MPU6050_ADDR, SMPLRT_DIV_REG, 1, &Data, 1, 1000);
 
 		// Set accelerometer configuration in ACCEL_CONFIG Register
-		// XA_ST=0,YA_ST=0,ZA_ST=0, FS_SEL=0 -> ± 2g
-		Data = 0x00;
+		// XA_ST=0,YA_ST=0,ZA_ST=0, FS_SEL=0 -> ± 2g FS_SEL=1 -> ± 4g
+		Data = 1ul<<3;
 		HAL_I2C_Mem_Write(&hi2c2, MPU6050_ADDR, ACCEL_CONFIG_REG, 1, &Data, 1, 1000);
 
 		// Set Gyroscopic configuration in GYRO_CONFIG Register
@@ -163,9 +163,9 @@ void MPU6050_Read_Accel (void)
 	     I have configured FS_SEL = 0. So I am dividing by 16384.0
 	     for more details check ACCEL_CONFIG Register              ****/
 
-	Ax = Accel_X_RAW/16384.0;
-	Ay = Accel_Y_RAW/16384.0;
-	Az = Accel_Z_RAW/16384.0;
+	Ax = Accel_X_RAW/8192.0;
+	Ay = Accel_Y_RAW/8192.0;
+	Az = Accel_Z_RAW/8192.0;
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 0);
 }
 
@@ -633,7 +633,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	// MPU6050_Read_Gyro();
 	char message[11];
 	//sprintf(message, "%1.2f\n",Ax);
-	gcvt(Ay,4,message);
+	gcvt(Az,4,message);
 	strcat(message,"\n");
 	//message=to_string(Ax);
 	HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);

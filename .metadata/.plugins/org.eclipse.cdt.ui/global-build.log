@@ -1,0 +1,1291 @@
+15:12:57 **** Clean-only build of configuration Debug for project STM ****
+make -j2 clean 
+rm -rf *
+rm: can't remove 'Core/Src': Permission denied
+rm: can't remove 'Core/Startup': Permission denied
+rm: can't remove 'Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates': Permission denied
+rm: can't remove 'Drivers/STM32F7xx_HAL_Driver/Src': Permission denied
+make: [makefile:72: clean] Error 1 (ignored)
+ 
+15:12:59 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f746zgtx.d" -MT"Core/Startup/startup_stm32f746zgtx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f746zgtx.o" "../Core/Startup/startup_stm32f746zgtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:618:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%hu\r\n",(int)adc_value);
+  ^~~~~~~
+../Core/Src/main.c:618:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:618:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:625:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:625:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:625:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-size   STM.elf 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  37112	    484	   3092	  40688	   9ef0	STM.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.list
+ 
+Finished building: STM.bin
+ 
+18:25:45 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:628:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:628:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:628:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:629:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:629:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:629:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM.list
+ 
+18:30:15 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:628:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:628:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:628:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:629:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:629:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:629:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+18:32:20 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:628:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:628:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:628:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:629:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:629:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:629:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+18:37:07 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:629:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:629:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:629:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:630:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:630:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:630:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+ 
+18:37:49 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+ 
+18:39:42 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:629:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:629:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:629:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:630:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:630:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:630:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36672	    484	   3084	  40240	   9d30	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+18:40:07 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36672	    484	   3084	  40240	   9d30	STM.elf
+Finished building: default.size.stdout
+ 
+18:41:24 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:629:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:629:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:629:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:630:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:630:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:630:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+18:42:01 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+ 
+18:42:58 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:227:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:629:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:629:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:629:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:630:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:630:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:630:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: default.size.stdout
+ 
+18:45:28 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:228:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:630:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:630:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:630:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:631:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:631:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:631:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37088	    484	   3092	  40664	   9ed8	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+18:46:50 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:633:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:633:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:633:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37112	    484	   3092	  40688	   9ef0	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+18:48:12 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:633:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:633:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:633:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37112	    484	   3092	  40688	   9ef0	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+18:50:42 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:633:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:633:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:633:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+18:51:20 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:52:04 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:633:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:633:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:633:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+Finished building: STM.list
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:53:12 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:633:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:633:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:633:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+18:54:12 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:54:57 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:55:16 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:55:47 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36344	    484	   3092	  39920	   9bf0	STM.elf
+Finished building: default.size.stdout
+ 
+18:58:57 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:632:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:632:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36024	    484	   3092	  39600	   9ab0	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+19:03:13 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+Finished building: STM.list
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34180	    484	   3092	  37756	   937c	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+19:06:03 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:230:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34188	    484	   3092	  37764	   9384	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+19:34:28 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  34220	    484	   3092	  37796	   93a4	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+19:37:05 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  34220	    484	   3092	  37796	   93a4	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+19:42:10 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34220	    484	   3092	  37796	   93a4	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+19:48:13 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34196	    484	   3092	  37772	   938c	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+19:48:44 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34196	    484	   3092	  37772	   938c	STM.elf
+Finished building: default.size.stdout
+ 
+20:30:11 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:635:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:635:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:635:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:636:2: error: expected expression before '/' token
+  /HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+  ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+20:30:30 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:635:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:635:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:635:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:636:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:636:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:636:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+Finished building: STM.list
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  36384	    484	   3092	  39960	   9c18	STM.elf
+Finished building: default.size.stdout
+ 
+20:31:06 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36384	    484	   3092	  39960	   9c18	STM.elf
+Finished building: default.size.stdout
+ 
+20:41:36 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:635:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:635:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:635:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:636:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:636:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:636:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  35952	    484	   3084	  39520	   9a60	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+20:47:57 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:636:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:636:48: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34108	    484	   3084	  37676	   932c	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+20:49:09 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:9: error: assignment to expression with array type
+  message=Ax;
+         ^
+../Core/Src/main.c:637:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:637:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:637:48: note: include '<string.h>' or provide a declaration of 'strlen'
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+20:49:41 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:10: warning: implicit declaration of function 'string' [-Wimplicit-function-declaration]
+  message=string(Ax);
+          ^~~~~~
+../Core/Src/main.c:636:9: error: assignment to expression with array type
+  message=string(Ax);
+         ^
+../Core/Src/main.c:637:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:637:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:637:48: note: include '<string.h>' or provide a declaration of 'strlen'
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+20:51:02 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:10: warning: implicit declaration of function 'to_string' [-Wimplicit-function-declaration]
+  message=to_string(Ax);
+          ^~~~~~~~~
+../Core/Src/main.c:636:9: error: assignment to expression with array type
+  message=to_string(Ax);
+         ^
+../Core/Src/main.c:637:48: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  HAL_UART_Transmit(&huart3, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+                                                ^~~~~~
+../Core/Src/main.c:637:48: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:637:48: note: include '<string.h>' or provide a declaration of 'strlen'
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+20:51:58 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:10: warning: implicit declaration of function 'to_string' [-Wimplicit-function-declaration]
+  message=to_string(Ax);
+          ^~~~~~~~~
+../Core/Src/main.c:636:9: error: assignment to expression with array type
+  message=to_string(Ax);
+         ^
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+20:53:51 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:635:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%1.3f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:635:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:635:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35952	    484	   3068	  39504	   9a50	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+20:54:36 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:635:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(message, "%f\n",Ax);
+  ^~~~~~~
+../Core/Src/main.c:635:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:635:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35944	    484	   3068	  39496	   9a48	STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM.list
+ 
+21:02:45 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,2,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34948	    484	   3068	  38500	   9664	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+21:03:55 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,2,message);
+  ^~~~
+../Core/Src/main.c:637:10: error: 'mesagge' undeclared (first use in this function); did you mean 'message'?
+  message=mesagge+"\n";
+          ^~~~~~~
+          message
+../Core/Src/main.c:637:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+21:15:09 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,3,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34988	    484	   3068	  38540	   968c	STM.elf
+Finished building: STM.list
+Finished building: default.size.stdout
+ 
+ 
+21:18:32 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,3,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+21:21:18 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+Finished building: STM.list
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+21:23:40 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+21:53:33 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ay,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+21:57:08 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+09:20:54 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+15:45:51 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+13:58:36 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+Finished building: STM.list
+ 
+ 
+15:09:57 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+Finished building: STM.list
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+15:14:00 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ax,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+Finished building: STM.list
+ 
+arm-none-eabi-size   STM.elf 
+ 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+15:15:10 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+15:15:35 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+15:16:23 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+15:32:18 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Ay,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM.list
+ 
+15:51:16 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:233:8: warning: unused variable 'buf' [-Wunused-variable]
+   char buf[4];
+        ^~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:636:2: warning: implicit declaration of function 'gcvt' [-Wimplicit-function-declaration]
+  gcvt(Az,4,message);
+  ^~~~
+arm-none-eabi-gcc -o "STM.elf" @"objects.list"   -mcpu=cortex-m7 -T"N:\UMNG\2022-1\local work\PDS_LAB2\STM\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM.elf
+ 
+arm-none-eabi-objdump -h -S  STM.elf  > "STM.list"
+arm-none-eabi-objcopy  -O binary  STM.elf  "STM.bin"
+Finished building: STM.bin
+ 
+arm-none-eabi-size   STM.elf 
+Finished building: STM.list
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+ 
+Finished building: default.size.stdout
+ 
+15:52:14 **** Incremental Build of configuration Debug for project STM ****
+make -j2 all 
+arm-none-eabi-size   STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35420	    484	   3076	  38980	   9844	STM.elf
+Finished building: default.size.stdout
+ 

@@ -14,6 +14,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import serial
 from serial import Serial
 import threading
+
+import os
 # user imports END
 
 
@@ -80,7 +82,12 @@ class Ui_Dialog(object):
 # User functions BEGIN
 
 COM="COM19"
-nombreArchivo='./muestras/acely.txt'
+nombreArchivo='acelymovladoalado01.txt'
+
+
+script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
+rel_path = "muestras/"+nombreArchivo
+nombreArchivo = os.path.join(script_dir, rel_path)
 
 def escribirArchivo(nombre,dato):
     with open(nombre,'a') as f:

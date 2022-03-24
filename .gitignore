@@ -3,3 +3,16 @@
 *.log
 .metadata
 RemoteSystemsTempFiles
+
+
+# cache de matlab
+slprj
+
+# archivos de autoguardado de matlab
+*.slxc
+*.slx.*
+
+# comprimidos
+
+*.rar
+*.zip
